@@ -1,0 +1,10 @@
+$(document).on('click', '.skill-item', function(event) {
+    event.preventDefault()
+    $('.skill-item').removeClass('bg-success')
+    $('.skill-item').removeClass('text-white')
+    $(this).addClass('bg-success')
+    $(this).addClass('text-white')
+    var id = "#" + $(this).attr('target')
+    $('.tab-pane').removeClass('active')
+    $(id).addClass('active')
+})
